@@ -1,0 +1,56 @@
+programa {
+  funcao inicio() {
+
+    //Varaiveis
+    real emprestimo, rendaMensal, prestacao, parcelas
+    cadeia nome
+
+
+
+
+    //solicitando dados
+    escreva("Digite seu nome: ")
+    leia(nome)
+
+    escreva("Digite sua renda mensal: ")
+    leia(rendaMensal)
+
+    escreva("Digite o valor do emprestimo que deseja receber: ")
+    leia(emprestimo)
+
+    escreva("Digite em quantas prestações voce quer pagar: ")
+    leia(prestacao)
+    
+    limpa()
+
+    //executando
+    parcelas = emprestimo / prestacao
+    se(emprestimo < rendaMensal * 10 e parcelas < 0.3 * rendaMensal){
+     escreva("Parabéns, seu emprestimo foi aprovado!!!!")
+     escreva("\nRenda Mnesal: ", rendaMensal)
+     escreva("\nValor do emprestimo: ",emprestimo)
+     escreva("\nNúmero de prestações: ",prestacao)
+    }
+    senao {
+    escreva("Desculpe, seu empréstimo foi negado.")
+    escreva("\nRenda Mnesal: ", rendaMensal)
+    escreva("\nValor do emprestimo: ",emprestimo)
+    escreva("\nNúmero de prestações: ",prestacao)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    
+  }
+}

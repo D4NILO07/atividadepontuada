@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+
+    //Variaveis.
+    cadeia cor
+  
+    
+    //solicitando dados.
+    escreva("Seja bem vindo a nossa loja de CD's")
+    escreva("\nOs preços dos nossos CD's são associados a cores.")
+    escreva("\nQual cor o(a) senhor(a) quer? ")
+    leia(cor)
+
+    //Realizando questão
+     escolha(cor){
+      caso "verde": 
+      escreva("O Valor Do CD é R$10,00")
+      pare
+      caso "azul": 
+      escreva("O Valor Do CD é R$20,00")
+      pare
+      caso "amarelo": 
+      escreva("O Valor Do CD é R$30,00")
+      pare
+      caso "vermelho": 
+      escreva("O Valor Do CD é R$40,00")
+      pare
+     }
+
+
+
+  }
+}

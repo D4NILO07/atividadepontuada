@@ -1,0 +1,59 @@
+programa {
+  funcao inicio() {
+    //Variavies
+    inteiro litros
+    real valorTotal, total, gasolina = 6.59, alcool = 3.79
+    cadeia combustivel
+    
+
+
+    //solicitando dados
+    escreva ("Olá seja bem vindo ao posto de combustiveis!!!")
+    escreva("\nLevando até 25 Litros de alcool o(a) senhor(a) receberá um desconto de 2% por litro.")
+    escreva("\nSe quiser levar acima de 25 litros o valor do desconto aumenta para 4% por litro.")
+   escreva("\nPorém, levando até 25 Litros de gasolina o(a) senhor(a) receberá um desconto de 3% por litro.")
+    escreva("\nSe quiser levar acima de 25 litros o valor do desconto aumenta para 5% por litro.")
+    escreva("\nEntã, qual combustivel o senhor vai querer?")
+    escreva("\nPara Alcool utilize - A e para gasolina utilize G: ")
+    leia(combustivel)
+  
+    //executando
+    escolha (combustivel){
+    caso "G":
+    gasolina
+    escreva("\nQuantos litros vai querer? ")
+    leia(litros)
+    
+    se (litros<=25){
+      valorTotal = gasolina * litros
+      total= valorTotal - (valorTotal * 0.03)
+      escreva("Valor total: R$ ",total)
+    }
+    se (litros>25){
+      valorTotal = gasolina * litros
+      total= valorTotal - (valorTotal * 0.05)
+      escreva("Valor total: R$ ",total)
+    }
+    pare 
+    caso "A":
+    alcool
+    escreva("\nQuantos litros vai querer? ")
+    leia(litros)
+
+    se (litros<=25){
+      valorTotal = alcool * litros
+      total= valorTotal - (valorTotal * 0.02)
+      escreva("Valor total: R$ ",total)
+    }
+    se (litros>25){
+      valorTotal = alcool * litros
+      total= valorTotal - (valorTotal * 0.04)
+      escreva("Valor total: R$ ",total)
+    
+
+    }
+
+    }
+    
+  }
+}
